@@ -1,2 +1,3 @@
 #!/bin/sh
-python rss2email.py feeds.dat $*
+MYDIR="$(dirname "$(which "$0")")"
+python $MYDIR/rss2email.py $MYDIR/feeds.dat $*
